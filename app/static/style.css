@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #121212; /* Darker background for the entire page */
+  background-image: radial-gradient(circle, #1f1f1f, #121212); /* Subtle gradient effect */
+  overflow: hidden;
+}
+
+/* Centering the login container */
+.login {
+  background: #1e1e1e; /* Darker gray background */
+  color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  width: 360px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 38px;
+  color: #f4a261;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  width: 100%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #2b2b2b; /* Darker background for inputs */
+  color: #fff;
+  font-size: 16px;
+  box-shadow: inset 0 -5px 45px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  appearance: none; /* Remove native dropdown arrow */
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 8px #f4a261;
+  border-color: #f4a261;
+  outline: none;
+}
+
+select {
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="white" d="M2 0L0 2h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+
+select option {
+  background: #1e1e1e; /* Same dark background for options */
+  color: #fff; /* White text for readability */
+  border: none;
+  padding: 10px;
+}
+
+select option:hover {
+  background: #f4a261; /* Highlighted background color */
+  color: #000; /* Darker text on hover */
+}
+
+button {
+  background-color: #f4a261;
+  color: white;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.4s ease;
+}
+
+button:hover {
+  background-color: #e76f51;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(231, 111, 81, 0.4);
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .login {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
